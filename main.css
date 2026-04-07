@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+    font-family: gg;
+    letter-spacing: .5px;
+}
+
+@font-face {
+  font-family: gg; /* set name */
+  src: url(imgs/gg\ sans\ Bold.ttf); /* url of the font */
+}
+
+
+body {
+    background-color: #1a1a1e;
+    height: 200vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 5%;  /* 200vh to 5% */
+    background-color: #121214;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+#DiscordLogo {
+    background: transparent url("imgs/discord_logo_white.png") no-repeat center;
+    background-size: contain;
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin-left: 2%;
+    margin-right: 2%;
+    cursor: pointer;
+} 
+
+header section {
+    height: 100%;
+    width: 35%;
+    min-width: 750px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header section a {
+    text-decoration: none;
+    font-family: gg;
+    letter-spacing: .5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: .1s;
+    border-radius: 10px;
+}
+
+header section a:hover {
+    background-color: #5865f2;
+    
+    
+}
+
+main {
+    width: 100%;
+    flex: 1;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+main > h1 {
+    font-family: italic, Arial, sans-serif;
+    font-style: italic;
+    font-size: 95pt;
+    font-weight: 1000;
+    margin: 100px;
+    /* font-family: gg; */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+#oferty {
+    height: 300px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+
+    max-width: 1900px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.oferta {
+    aspect-ratio: 1/1.3;
+    width: 30%;
+    max-width: 500px;
+    border-radius: 20px;
+
+    background: #242429;
+    background: linear-gradient(315deg,rgba(36, 36, 41, 1) 25%, rgba(47, 41, 59, 1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.s1 {
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.s2 {
+    width: 100%;
+    height: 55%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    font-size: 1vw;
+}
+
+.s3 {
+    width: 100%;
+    height: 15%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.s1 div {
+    background: transparent url(imgs/psiaki.png) no-repeat center;
+    background-size: contain;
+
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    filter: brightness(50%);
+
+}
+
+.s1 section {
+    height: 100%;
+    width: 100%;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.s1 section h3 {
+    font-size: 1.5vw;
+    
+    
+}
+
+.s1 section h2 {
+    margin: -1vw;
+    margin-left: -.5vw;
+    font-size: 4vw;
+    font-family: Apple Chancery, cursive;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(231, 225, 225);
+}
+
+
+.s2 h3 {
+    color: #ffffffb7;
+}
+
+
+.s3 div {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: #121214;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 15pt;
+    transition: .2s;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3 div:hover {
+    color: #5865f2;
+}
+
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #121214;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+footer h1 {
+    color: #242428;
+    width: 100%;
+    height: 50%;
+    font-family: gg;
+    font-size: 22vw;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+@media (min-width: 2000px) {
+  .s1 section h2 {
+    font-size: 2.5vw;
+    margin-top: -.5vw;
+}
+.s1 section h3 {
+    font-size: 1.2vw;
+    margin-left: -.1vw;
+}
+}
+
+@media (max-width: 2300px) {
+    .s2 {
+    font-size: 1.5vw;
+}
+}
